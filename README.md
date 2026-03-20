@@ -12,6 +12,10 @@ There exists no good standards for tasks.  There are some industry standards, ex
 
 This is intended to be a general python client for accessing task and calendaring information from various sources.  Version 0.1.0 it won't be much more than a wrapper for the CalDAV library already - but it will provide a clean, general and well-documented interface, it will support a clean, general and well-documented configuration file, with the intention to support other backends and not only CalDAV servers.
 
+## Existing systems
+
+I was just told about the existence of a https://pypi.org/project/icalcli/ project.  TODO: check it up and compare.
+
 ## Why it's important
 
 Today one may have to choose different libraries for fetching calendaring information from different kinds of software.  I think it's important to have a "swiss army knife"-library for accessing calendars - one should not have to use different libraries for different calendar providers.  I'd like to support other standards in the CalDAV library, but it's a bit outside the scope for that library.
