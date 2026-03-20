@@ -14,7 +14,17 @@ This is intended to be a general python client for accessing task and calendarin
 
 ## Existing systems
 
-I was just told about the existence of a https://pypi.org/project/icalcli/ project.  TODO: check it up and compare.
+### icalcli
+
+https://pypi.org/project/icalcli/ (source: https://github.com/jrvarma/icalcli, MIT license) is a command-line calendar manager forked from `gcalcli` (the Google Calendar CLI), decoupling the front-end from any specific backend via a pluggable backend interface.  It ships with a local `.ics` file backend and an EteSync/EteBase backend.  There is no CalDAV support and no HTTP iCal feed fetching.
+
+Critically, it has **zero VTODO/task support** — it is built entirely around `VEVENT`.
+
+The interface is a CLI (interactive REPL + subcommands for agenda/week/month views, CRUD, search).  It is not designed as a library API.
+
+The project is actively maintained (last release 1.1.3 in December 2024).
+
+**Conclusion:** icalcli and this project are complementary rather than competing.  icalcli is a user-facing CLI tool for viewing and editing calendar *events* from local files; this project aims to be a multi-backend *library* with first-class task support.  The pluggable backend design in icalcli is worth studying for inspiration.
 
 ## Why it's important
 
