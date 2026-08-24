@@ -28,7 +28,7 @@ The project is actively maintained (last release 1.1.3 in December 2024).
 
 ## Why it's important
 
-Today one may have to choose different libraries for fetching calendaring information from different kinds of software.  I think it's important to have a "swiss army knife"-library for accessing calendars - one should not have to use different libraries for different calendar providers.  I'd like to support other standards in the CalDAV library, but it's a bit outside the scope for that library.
+Today one may have to choose different libraries for fetching calendaring information from different kinds of software.  I think it's important to have a "swiss army knife"-library for accessing calendars - one should not have to use different libraries for different calendar providers.  I've considered supporting other standards in the CalDAV library, but it's a bit outside the scope for that library - hence the need for another package.
 
 ## Backends to be supported
 
